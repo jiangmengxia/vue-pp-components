@@ -1,0 +1,50 @@
+.toast
+  position: fixed
+  z-index: 1001
+  text-align: center
+  color: $toast-color
+  background: $toast-bg-color
+  left: 50%
+  top: 50%
+  transform: translate(-50%, -50%)
+  padding: $toast-padding
+  border-radius: $toast-border-radius
+  width: $toast-width
+  height: $toast-height
+  display: flex
+  flex-direction: row
+  justify-content: space-around
+  align-items: center
+
+  .toast-icon.icon.error
+    color: $color-error
+  .toast-icon.icon.success
+    color: $color-success
+  .toast-icon.icon.warn
+    color: $color-warn
+
+  .text
+    margin: $toast-text-margin
+    text-align: center
+    color: $toast-text-color
+    font-size: $toast-text-ft
+    word-break: break-all
+    line-height: $toast-text-line-height
+
+  .slide-fade-enter-active
+    transition: all .3s ease
+
+  .slide-fade-leave-active
+    transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0)
+
+  .slide-fade-enter, .slide-fade-leave-to
+    opacity: 0
+
+  .slide-fade-top-enter-active
+    transition: all .3s ease
+
+  .slide-fade-top-leave-active
+    transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0)
+
+  .slide-fade-top-enter, .slide-fade-top-leave-to
+    transform: translateY(20px)

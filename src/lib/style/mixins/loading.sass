@@ -1,0 +1,34 @@
+@keyframes loading
+  0%
+    transform: rotate(0deg)
+  100%
+    transform: rotate(360deg)
+
+.loading
+  width: $loading-width
+  height: $loading-width
+  border: $loading-border-width solid
+  border-color: $color-default $color-default transparent
+  border-radius: 50%
+  box-sizing: border-box
+  /*动画时间1s，线性变化，无限循环*/
+  animation: loading $loading-animation-time linear infinite
+  display: inline-block
+
+.loading[type=primary]
+  border-color: $color-primary $color-primary transparent
+
+.loading[type=success]
+  border-color: $color-success $color-success transparent
+
+.loading[type=warn]
+  border-color: $color-warn $color-warn transparent
+
+.loading[type=error]
+  border-color: $color-error $color-error transparent
+
+.loading[type=dark]
+  border-color: $color-dark $color-dark transparent
+
+.loading[type=default]
+  border-color: $color-default $color-default transparent

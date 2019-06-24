@@ -1,0 +1,56 @@
+.box, .checkbox
+  display: inline-block
+
+.box
+  position: relative
+  border-radius: 50%
+  overflow: hidden
+
+.box > i
+  font-size: $ckbox-ft
+  border-radius: 50%
+  color: $ckbox-color
+  width: $ckbox-width
+  height: $ckbox-height
+  background: $ckbox-bg-color
+  text-align: center
+  line-height: $ckbox-height
+  display: inline-block
+
+.box > input
+  position: absolute
+  top: 0
+  bottom: 0
+  right: 0
+  left: 0
+  z-index: 1
+  opacity: 0
+
+.checkbox > .box > i
+  vertical-align: middle
+
+.checkbox[color=dark] > .box > i.checked
+  background: $color-dark
+
+.checkbox[color=primary] > .box > i.checked
+  background: $color-primary
+
+.checkbox[color=success] > .box > i.checked
+  background: $color-success
+
+.checkbox[color=warn] > .box > i.checked
+  background: $color-warn
+
+.checkbox[color=error] > .box > i.checked
+  background: $color-error
+
+.checkbox.disabled > .box > i
+  background: $button-disabled-bg-color
+
+.checkbox.disabled > span
+  color: $button-disabled-bg-color
+
+.checkbox > span
+  float: right
+  margin-left: 10px
+  line-height: $ckbox-height

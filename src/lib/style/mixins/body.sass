@@ -1,0 +1,26 @@
+.pp-body
+  flex: 1
+  z-index: 10
+  position: relative
+  .refresh
+    height: $refresh-height
+    padding: $refresh-padding
+    overflow: hidden
+    z-index: 10
+    position: absolute
+    top: -$refresh-top-hide
+    left: 0
+    right: 0
+
+  .real-content
+    top: 0
+    right: 0
+    left: 0
+    height: 100%
+    position: absolute
+    z-index: 8
+    overflow-y: scroll
+
+  .loading-more
+    padding: $loading-segment-padding
+

@@ -1,0 +1,38 @@
+.action-sheet
+  height: $acsheet-height
+  position: absolute
+  left: $acsheet-indent
+  right: $acsheet-indent
+  bottom: 0
+  background: $acsheet-bg-color
+  text-align: center
+  border-top-left-radius: $acsheet-border-top-radius
+  border-top-right-radius: $acsheet-border-top-radius
+  z-index: 101
+  box-shadow: $navbar-box-shadow
+
+  .title
+    height: $acsheet-title-height
+    line-height: $acsheet-title-height
+    font-size: $acsheet-title-ft
+
+  .content
+    margin-bottom: $acsheet-content-mb
+    margin-top: $acsheet-content-mt
+    font-size: $acsheet-content-ft
+    height: $acsheet-content-height
+
+  button
+    &.btn-opt
+      display: block
+      height: $acsheet-button-height
+      width: 100%
+      border: none
+      background: none
+      outline: none
+      color: $acsheet-button-color
+      font-size: $acsheet-button-ft
+      border-top: 1px solid $acsheet-split-color
+      &:last-child
+        border-bottom: 1px solid $acsheet-split-color
+

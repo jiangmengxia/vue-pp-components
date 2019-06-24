@@ -1,0 +1,68 @@
+button.pp-button
+  border: none
+  outline: none
+  min-width: $button-min-width
+  min-height: $button-height
+  border-radius: $button-border-radius
+  font-size: $button-ft
+
+button.pp-button[type]
+  color: $button-text-color
+
+button.pp-button[type=default]
+  background: buttonface
+  color: $color-default
+
+button.pp-button[type=dark]
+  background: $color-dark
+
+button.pp-button[type=dark][bordered]
+  background: none
+  color: $color-dark
+  border: 1px solid $color-dark
+
+button.pp-button[type=primary]
+  background: $color-primary
+
+button.pp-button[type=primary][bordered]
+  background: none
+  color: $color-primary
+  border: 1px solid $color-primary
+
+button.pp-button[type=success]
+  background: $color-success
+
+button.pp-button[type=success][bordered]
+  background: none
+  color: $color-success
+  border: 1px solid $color-success
+
+button.pp-button[type=warn]
+  background: $color-warn
+
+button.pp-button[type=warn][bordered]
+  background: none
+  color: $color-warn
+  border: 1px solid $color-warn
+
+button.pp-button[type=error]
+  background: $color-error
+
+button.pp-button[type=error][bordered]
+  background: none
+  color: $color-error
+  border: 1px solid $color-error
+
+button.pp-button[type=nostyle]
+  padding: 0
+  height: auto
+  min-height: auto
+  min-width: auto
+
+button.pp-button[disabled]
+  background: $button-disabled-bg-color
+  color: $button-text-color
+
+button.pp-button[long]
+  display: block
+  width: 100%

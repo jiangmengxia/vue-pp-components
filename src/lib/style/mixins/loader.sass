@@ -1,0 +1,25 @@
+.loader /deep/ .shadow
+  z-index: 1001
+
+  .loading-box
+    position: absolute
+    top: 50%
+    left: 0
+    right: 0
+    transform: translateY(-50%)
+    text-align: center
+    color: $loader-box-color
+
+  .loading-box > .loading-content
+    display: inline-block
+    padding: $padding
+    background: $loader-content-bg-color
+    border-radius: $loader-content-border-radius
+
+  .loading-table
+    display: table
+
+  .loading-text
+    display: table-cell
+    vertical-align: middle
+    padding-left: $loader-text-ml

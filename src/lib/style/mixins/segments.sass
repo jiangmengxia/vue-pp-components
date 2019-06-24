@@ -1,0 +1,38 @@
+.tab-bar
+  border-top: 1PX solid $segments-tabbar-border-color
+  border-bottom: 1PX solid $segments-tabbar-border-color
+  background: $segments-tabbar-bg-color
+  border-radius: 5px
+  overflow: hidden
+  font-size: $segments-tabbar-ft
+  color: $segments-tabbar-color
+
+  .tab-content
+    padding: $segments-content-padding
+    font-size: $segments-content-ft
+
+  .tab-bar-item
+    display: inline-block
+    height: $segments-tabbar-height
+    line-height: $segments-tabbar-height
+
+  .tab-bar-item.active
+    position: relative
+    color: $segments-tabbar-active-color
+    font-weight: bold
+    background: $color-default
+
+  .tab-bar-item[type=primary].active
+    background: $color-primary
+
+  .tab-bar-item[type=success].active
+    background: $color-success
+
+  .tab-bar-item[type=warn].active
+    background: $color-warn
+
+  .tab-bar-item[type=error].active
+    background: $color-error
+
+  .tab-bar-item[type=dark].active
+    background: $color-dark
