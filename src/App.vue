@@ -1,5 +1,4 @@
 <template>
-  <!--<div id="app" style="height: 100%">-->
   <pp-container>
     <pp-header v-show="!Info.hideHeader">
       <pp-navbar>{{Info.title}}</pp-navbar>
@@ -7,7 +6,6 @@
     <router-view></router-view>
     <pp-footer v-show="!!Info.showFooter">footer</pp-footer>
   </pp-container>
-  <!--</div>-->
 </template>
 
 <script>
@@ -27,5 +25,7 @@
   }
 </script>
 
-<style src="./lib/style/index.sass" lang="sass"></style>
-<style src="./mytheme/theme.sass"
+<!--<style src="./lib/style/index.sass" lang="sass"></style>-->
+<!--<style src="./mytheme/theme.sass" lang="scss"></style>-->
+<style src="../dist/vpc.css"></style>
+

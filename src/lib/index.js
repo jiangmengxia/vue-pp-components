@@ -21,38 +21,39 @@ import PPicon from './components/icon'
 import PPbutton from './components/button'
 import PPpopsheet from './components/pop-sheet'
 import PPpicker from './components/picker'
+import './style/index.sass'
 
 
-var VuePPComponents = {}
-VuePPComponents.install = function (Vue, options) {
-  /*全局组件*/
-  $PPtoast(Vue, options)
-  $PPalert(Vue, options)
-  $PPactionsheet(Vue, options)
-  $PPloader(Vue, options)
-  $PPloaded(Vue)
+export default {
+  install: (Vue, options) => {
+    /*全局组件*/
+    $PPtoast(Vue, options)
+    $PPalert(Vue, options)
+    $PPactionsheet(Vue, options)
+    $PPloader(Vue, options)
+    $PPloaded(Vue)
 
-  /*components组件*/
-  PPshadowback(Vue, options)
-  PPpopup(Vue, options)
-  PPfade(Vue, options)
-  PPslide(Vue, options)
-  PPcard(Vue, options)
-  PPcardheader(Vue, options)
-  PPcardcontent(Vue, options)
-  PPcheckbox(Vue, options)
-  PPitem(Vue, options)
-  PPloading(Vue, options)
-  PPbody(Vue, options)
-  PPcontainer(Vue, options)
-  PPfooter(Vue, options)
-  PPheader(Vue, options)
-  PPnavbar(Vue, options)
-  PPsegments(Vue, options)
-  PPsegment(Vue, options)
-  PPicon(Vue, options)
-  PPbutton(Vue, options)
-  PPpopsheet(Vue, options)
-  PPpicker(Vue, options)
+    /*components组件*/
+    PPshadowback(Vue, options)
+    PPpopup(Vue, options)
+    PPfade(Vue, options)
+    PPslide(Vue, options)
+    PPcard(Vue, options)
+    PPcardheader(Vue, options)
+    PPcardcontent(Vue, options)
+    PPcheckbox(Vue, options)
+    PPitem(Vue, options)
+    PPloading(Vue, options)
+    PPbody(Vue, options)
+    PPcontainer(Vue, options)
+    PPfooter(Vue, options)
+    PPheader(Vue, options)
+    PPnavbar(Vue, options)
+    PPsegments(Vue, options)
+    PPsegment(Vue, options)
+    PPicon(Vue, options)
+    PPbutton(Vue, options)
+    PPpopsheet(Vue, options)
+    PPpicker(Vue, options)
+  }
 }
-export default VuePPComponents

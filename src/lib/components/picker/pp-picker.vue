@@ -1,5 +1,5 @@
 <template>
-  <div class="picker-default-ft picker-default-color">
+  <div class="picker-default-ft picker-default-color picker">
     <div class="line-address flex-row flex-align-items-center line-input" @click="show=true">
       <label class="text-right label picker-label-ft mr-16" :style="{width:labelWidth+'px'}" v-if="labelWidth">{{label}}</label>
       <label class="text-right label picker-label-ft mr-16" v-else>{{label}}</label>
@@ -405,61 +405,3 @@
     }
   }
 </script>
-
-<style lang="scss" scoped>
-  .line-address {
-    height: 40px;
-  }
-
-  .address-selector {
-    height: 80% !important;
-    background: #ffffff;
-  }
-
-  .title {
-    padding: 16px;
-  }
-
-  .address-selector-main {
-    border-bottom: 1px solid #d1d1d1;
-    padding: 0 16px 16px 16px;
-
-  }
-
-  .address-selector-main li {
-    height: 30px;
-    line-height: 30px;
-  }
-
-  .address-selector-lis {
-    overflow: scroll;
-    background: #f5f5f5;
-    padding: 16px;
-
-  }
-
-  .address-selector-lis li {
-    height: 30px;
-    line-height: 30px;
-  }
-  .flex-row {
-    display: flex;
-    flex-direction: row;
-  }
-  .flex-align-items-center {
-    align-items: center;
-  }
-  .flex-column {
-    display: flex;
-    flex-direction: column;
-  }
-  .flex-item-1 {
-    flex: 1;
-  }
-  .mr-16{
-    margin-right: 16px;
-  }
-  .ml-16{
-    margin-left: 16px;
-  }
-</style>
